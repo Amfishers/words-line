@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>words-line</title>
+</head>
+<style>
+    html,body{ padding: 0; margin: 0; }
+    a{ color: #999; line-height: 20px; text-decoration: none; font-size:16px; font-family: "Arial" , sans-serif; }
+	h1{ padding-bottom:20px; text-align: center; font-weight: 400; font-size: 28px; font-family: "Microsoft Yahei"; }
+    .words_line{ margin: 0 auto 80px; width: 300px; }
+</style>
+
+<body>
+
+
+<!--------------  第一种  ---------------->
+<h1>第一种</h1>
+<style>
+    .first{ width: 300px; margin: 0 auto; }
+    .first .top_line{ width: 100%; height: 20px; border-bottom: 1px solid #eee; margin-bottom: -10px;}
+    .first .first_main{ width: 100%; height: 20px; text-align: center; }
+    .first .first_main a{ background: #fff; padding: 0 20px; line-height: 20px; }
+</style>
+
+<div class="words_line">
+    <div class="first">
+        <div class="top_line"></div>
+        <div class="first_main"><a href="#">Join Fisher</a></div>
+    </div>
+</div>
+
+
+<!--------------  第二种  ---------------->
+<h1>第二种</h1>
+<style>
+    .second .second_main{ position: relative; margin: 0 auto; text-align: center}
+    .second .second_main:before{ content: ""; position: absolute; border-top: 1px solid #eee; width: 80px; top: 10px; left: 0; }
+    .second .second_main:after{ content: ""; position: absolute; border-top: 1px solid #eee; width: 80px; top: 10px; right: 0; }
+</style>
+
+<div class="words_line">
+    <div class="second">
+	    <div class="second_main"><a href="#">Join Fisher</a></div>
+    </div>
+</div>
+
+
+
+<!--------------  第三种  ---------------->
+<h1>第三种</h1>
+<style>
+    .third fieldset{ border:0; padding:0; border-top:1px solid #eee; }
+    .third legend{ padding:0 20px; margin:0 auto;  margin:0 0 0 91px\9;} /*另外也可以 mairgin:0 0 0 20px; 按需写值*/
+</style>
+
+<div class="words_line">
+    <form class="third">
+        <fieldset>
+            <legend><a href="#">Join Fisher</a></legend>
+        </fieldset>
+    </form>
+</div>
+
+<!--------------  第四种  ---------------->
+<h1>第四种</h1>
+<style>
+    .forth{ text-align:center; background:url(images/line.png) center center no-repeat; }
+</style>
+
+<div class="words_line">
+    <div class="forth">
+        <a>Join Fisher</a>
+    </div>
+</div>
+
+
+<!--------------  第五种  ---------------->
+<h1>第五种</h1>
+<style>
+    .fifth{ position:relative; text-align:center;  }
+    .fifth a{ display:inline-block; *display:inline; *zoom:1; background-color:#fff; padding:0 30px; }
+    .fifth:after{ content:""; position:absolute; top:50%; left:0; right:0; width:100%; height:1px; background-color:#eee; z-index:-1;	 }
+</style>
+
+<div class="words_line">
+    <div class="fifth">
+        <a>Join Fisher</a>
+    </div>
+</div>
+
+
+</body>
+</html>
